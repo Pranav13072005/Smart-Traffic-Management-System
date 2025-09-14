@@ -1,12 +1,12 @@
-# 🚗 Real-Time Traffic Density Estimation with YOLOv8
+# Real-Time Traffic Density Estimation with YOLOv8
 ![Traffic Density Estimation](/images/cover_image_raw.png)
 
 
-## 🔍 Overview
+## Overview
 This project harnesses the power of YOLOv8's real-time detection capabilities to tackle Traffic Density Estimation, a crucial aspect of urban and traffic management systems. The primary objective is to accurately count vehicles within designated areas in video frames to evaluate traffic flow. The insights garnered from this data are instrumental in pinpointing peak traffic times, identifying bottlenecks, and aiding urban planning. We have crafted an extensive toolkit that provides in-depth analysis of traffic patterns, thereby augmenting traffic control and city planning endeavors.
 
 
-## 🎯 Objectives
+## Objectives
 The pivotal milestones achieved in our project include:
 * **YOLOv8 Model Selection and Assessment:** Commencing with the selection of a pre-trained YOLOv8 model and evaluating its baseline performance on the COCO dataset for vehicle detection purposes.
 * **Specialized Vehicle Dataset Curation:** Assembling and annotating a targeted dataset dedicated to vehicles to enhance the model's detection accuracy for a range of vehicle types.
@@ -17,48 +17,47 @@ The pivotal milestones achieved in our project include:
 * **Preparation for Cross-Platform Deployment:** Exporting the optimized model in the ONNX format to ensure cross-platform compatibility and facilitate deployment across diverse environments.
 
 
-## 📚 Dataset Description
+## Dataset Description
 
-### 🌐 Overview
+### Overview
 The **Top-View Vehicle Detection Image Dataset for YOLOv8** is essential for tasks like traffic monitoring and urban planning. It provides a unique perspective on vehicle behavior and traffic patterns from aerial views, facilitating the creation of AI models that can understand and analyze traffic flow comprehensively.
 
-### 🔍 Specifications 
-- 🚗 **Class**: 'Vehicle' including cars, trucks, and buses.
-- 🖼️ **Total Images**: 626
-- 📏 **Image Dimensions**: 640x640 pixels
-- 📂 **Format**: YOLOv8 annotation format
+### Specifications 
+-  **Class**: 'Vehicle' including cars, trucks, and buses.
+-  **Total Images**: 626
+-  **Image Dimensions**: 640x640 pixels
+-  **Format**: YOLOv8 annotation format
 
-### 🔄 Pre-processing
+###  Pre-processing
 Each image is carefully pre-processed and standardized to ensure consistency and high-quality training data for our model.
 
-### 🔢 Dataset Split
+###  Dataset Split
 The dataset is meticulously split into:
 - **Training Set**: 536 images for model training with diverse scenarios.
 - **Validation Set**: 90 images for unbiased model performance evaluation.
 
-### 🎭 Augmentation on Training Set
+###  Augmentation on Training Set
 Augmentations, including horizontal flips, are applied to enhance the training set's robustness, ensuring the model learns to generalize well across varied traffic conditions.
 
-### 🚀 Significance
+###  Significance
 This dataset is pivotal in developing sophisticated vehicle detection models and shaping intelligent transportation systems for smarter city infrastructures.
 
-### 🗃️ Sources
+###  Sources
 - The dataset is curated from [Pexels](https://www.pexels.com/search/videos/), offering diverse top-view videos for a rich vehicle detection dataset.
 - Images were extracted using [Roboflow](https://universe.roboflow.com/farzad/vehicle_detection_yolov8) at a rate of 1 frame per second, ensuring a wide variety of vehicle types and scenarios.
 
-### 📌 Access
+###  Access
 The dataset is publicly available on Roboflow and Kaggle:
 - Roboflow Project: [Top-View Vehicle Detection](https://universe.roboflow.com/farzad/vehicle_detection_yolov8)
 - Kaggle Dataset: [Top-View Vehicle Detection Image Dataset](https://www.kaggle.com/datasets/farzadnekouei/top-view-vehicle-detection-image-dataset)
 
 
-## 🎥 YouTube Demo
+##  YouTube Demo
 Real-Time Traffic Density Estimation with YOLOv8 in Action:
 
-[![Traffic Density Estimation Demo](https://img.youtube.com/vi/5SxQfWLENh8/0.jpg)](https://youtu.be/5SxQfWLENh8)
 
 
-## 📁 File Descriptions
+## File Descriptions
 
 - **`images/`**: This directory houses the cover images for the project and the sample image utilized within the notebook.
 - **`models/`**: Contains the best-performing fine-tuned YOLOv8 model in both `.pt` (PyTorch format) and `.onnx` (Open Neural Network Exchange format) for broad compatibility.
@@ -74,7 +73,7 @@ Real-Time Traffic Density Estimation with YOLOv8 in Action:
 
 To experience the full capabilities of the YOLOv8 Traffic Density Estimation project on your local machine, follow these steps:
 
-### 1️⃣. Initial Setup
+### 1️. Initial Setup
 1. **Clone the Repository**: Start by cloning the project repository to your local system using the command below:
     ```bash
     git clone https://github.com/FarzadNekouee/YOLOv8_Traffic_Density_Estimation.git
@@ -84,7 +83,7 @@ To experience the full capabilities of the YOLOv8 Traffic Density Estimation pro
     cd YOLOv8_Traffic_Density_Estimation
     ```
 
-### 2️⃣. Exploring the Model Development Pipeline
+### 2️. Exploring the Model Development Pipeline
 Get hands-on with the model development process and see the results of traffic density estimation:
 1. **Download the Dataset**: Access the dataset from [Kaggle](https://www.kaggle.com/datasets/farzadnekouei/top-view-vehicle-detection-image-dataset). Download and extract it to a known directory on your machine.
 2. **Open the Notebook**: Launch Jupyter Notebook or JupyterLab and open `real-time_traffic_density_estimation_yolov8.ipynb` to explore the model development pipeline.
@@ -92,7 +91,7 @@ Get hands-on with the model development process and see the results of traffic d
 4. **Update Paths**: Update the paths in the notebook for the dataset, sample image, and sample video to their respective locations on your local system.
 5. **Run the Notebook**: Execute all cells in the notebook to step through the data preprocessing, model training, and evaluation phases.
 
-### 3️⃣. Watching the Real-Time Performance
+### 3️. Watching the Real-Time Performance
 Witness the real-time traffic analysis capability of our YOLOv8 model:
 1. **Install Ultralytics YOLO**: Ensure you have the `ultralytics` package installed by running:
     ```bash
@@ -107,11 +106,5 @@ Witness the real-time traffic analysis capability of our YOLOv8 model:
 This GIF showcases our algorithm running in real-time:
 
 ![Real-Time Traffic Analysis GIF](Running_Real-Time_Traffic_Analysis.gif) 
-
-
-## 🔗 Additional Resources
-
-- 🎥 **Project Demo**: Watch the live demonstration of this project on [YouTube](https://www.youtube.com/watch?v=5SxQfWLENh8).
-- 🌐 **Kaggle Notebook**: Interested in a Kaggle environment? Explore the notebook [here](https://www.kaggle.com/code/farzadnekouei/real-time-traffic-density-estimation-with-yolov8).
 - 🌐 **Dataset Source**: Available on both [Roboflow](https://universe.roboflow.com/farzad/vehicle_detection_yolov8) and [Kaggle](https://www.kaggle.com/datasets/farzadnekouei/top-view-vehicle-detection-image-dataset).
 - 🤝 **Connect on LinkedIn**: Have questions or looking for collaboration? Let's connect on [LinkedIn](https://linkedin.com/in/farzad-nekouei-7535aa53/).
