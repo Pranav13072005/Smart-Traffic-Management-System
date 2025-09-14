@@ -105,5 +105,3 @@ Witness the real-time traffic analysis capability of our YOLOv8 model:
 This GIF showcases our algorithm running in real-time:
 
 ![Real-Time Traffic Analysis GIF](Running_Real-Time_Traffic_Analysis.gif) 
-- 🌐 **Dataset Source**: Available on both [Roboflow](https://universe.roboflow.com/farzad/vehicle_detection_yolov8) and [Kaggle](https://www.kaggle.com/datasets/farzadnekouei/top-view-vehicle-detection-image-dataset).
-- 🤝 **Connect on LinkedIn**: Have questions or looking for collaboration? Let's connect on [LinkedIn](https://linkedin.com/in/farzad-nekouei-7535aa53/).
